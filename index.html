@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeCrypt verfication</title>
+  <link rel="icon" type="image/x-icon" href="https://ahmedxbz.github.io/corpiocob-/ico0jjierb.jpg">
+
+  
+
+  <style>
+
+    /*the background color*/
+    body{
+      background: #dddddd; /* Fallback color */
+      background: linear-gradient(to right, rgb(234, 240, 240), rgb(235, 243, 242),rgb(227, 237, 238));
+      font-family: Arial, sans-serif;
+    }
+
+
+    /*the Verufyung rectangle*/
+    
+    #verify-containerp{
+      display: flex;
+      justify-content: center;
+      padding-top: 4.3em;
+    }
+
+    #verify-container{
+      width: 58em;
+      height: 29em;
+      background-color: #ffffff;
+      border-radius: 1.5em;
+    }
+
+    /*EveryThing Dev icon */
+
+    #corpicon{
+      width: 3.8em;
+      border-radius: 40em;
+    }
+
+    #corpiconp{
+      float: right;
+      padding-top: 1em;
+      padding-right: 1.7em;
+
+    }
+
+    /*enter text*/
+
+    #text1{
+      font-family: Arial, sans-serif;
+      font-size: 1.88em;
+      display: flex;
+      justify-content: center;
+      padding-top: 1em;
+    }
+
+    /*for verigy ir identity text*/
+
+    #text2{
+      font-family: Arial, sans-serif;
+      padding-left: 16.4em;
+      color: #525252;
+    }
+
+
+    /*veryfing code entry*/
+    #entry1[type=text] {
+      padding: 13px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 14px;
+      width: 23em;
+      background-color: #c5c5c5;
+    }
+
+    #entry1p{
+      padding-left: 14.25em;
+      padding-top: 2em;
+    }
+
+    
+    /*dont have a verfication code text*/
+
+    #text3{
+      font-family: Arial, sans-serif;
+      font-size: 0.95em;
+      padding-left: 15.2em;
+      color: rgb(0, 36, 241);
+      text-decoration: none;
+      
+    }
+
+    #text3p{
+      padding-top: 8px;
+
+    }
+
+    /*Next button*/
+
+    #next1p{
+      padding-left: 16.7em;
+      
+      padding-top: 4.4em;
+    }
+
+    #next1{
+      background: #2e72f0;
+      width: 23em;
+      height: 3.3em;
+      border: solid;
+      border-width: 1px;
+      background: linear-gradient(to right,rgb(243, 150, 166),blue);
+      border-radius: 1.3em;
+      transition:  0.8s ease;
+    }
+
+    #next1:hover{
+      transform: scale(1.02);
+    }
+
+    #next1text{
+      font-size:1.17em ;
+      font-family: Arial, sans-serif;
+      font-weight: 800;
+      
+    }
+
+    
+
+
+  </style>
+
+
+
+
+
+
+</head>
+
+<body>
+
+  <!--The verification page container-->
+  <div id="verify-containerp">
+
+    <div id="verify-container">
+
+      <!--corp icon-->
+
+      <div id="corpiconp">
+        <img src="https://ahmedxbz.github.io/corpiocob-/ico0jjierb.jpg" alt="" id="corpicon">
+
+      </div>
+
+      <!--ends-->
+
+
+      <!--enter text-->
+
+      <h2 id="text1">Please Enter The Verification Code</h2>
+
+      <!--ends-->
+
+
+
+      <!--for verigying text-->
+      <pre id="text2">For verifying That You Are EveryThing Corp. 
+                          Developer</pre>
+
+      <!--ends-->
+
+
+      <!--verifying code entry-->
+      <div id="entry1p">
+        <input type="text" id="entry1" placeholder="Enter code here">
+
+      </div>
+      <!--ends-->
+
+
+      <!--i dont have verification code text-->
+
+      <div id="text3p">
+        <a id="text3" href="https://ahmedxbz.github.io/et-developer-verifier-/" >Dont have verification code?</a>
+      </div>
+
+      <!--ends-->
+
+
+
+      <!--Submit button-->
+
+      <div id="next1p">
+        <button onclick="verifyCode()" id="next1"><span id="next1text">Submit</span></button>
+
+      </div>
+
+      <!--ends-->
+
+
+
+      <!--javascript script-->
+
+      <script>
+        function verifyCode() {
+          var code = document.getElementById("entry1").value;
+          var correctCode = "wA6hXARE_&?AGnas8#V,c>da)buD#J<ilVv[Rfdsateqrettedsfad4aWSSAXFDSfftyfyrdhcgcrtsdtrrrgchgddyt";
+    
+          if (code === correctCode) {
+            window.location.href = "https://ahmedxbz.github.io/Developers-hub-et/";
+          } else {
+            alert("Invalid verification code. Please try again.");
+          }
+        }
+      </script>
+      
+    </div>
+
+
+
+  </div>
+
+
+
+  
+</body>
+</html>
